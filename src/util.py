@@ -1,6 +1,6 @@
 from . import obs, const, get_bond
 import networkx as nx
-from shapely.geometry import Polygon, Point, mapping, LineString
+from shapely.geometry import Polygon, Point, mapping, LineString, MultiPoint
 from random import randint, uniform
 import numpy as np
 import matplotlib.pyplot as plt
@@ -217,7 +217,7 @@ class utils:
                     # print(inter_point)
                     x = []
                     y = []
-                    if isinstance(inter_point, (Point, LineString)):
+                    if isinstance(inter_point, (Point, LineString, MultiPoint)):
                         x, y = inter_point.coords.xy
                     else:
                         x, y = inter_point.exterior.coords.xy

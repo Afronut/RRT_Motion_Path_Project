@@ -185,6 +185,8 @@ def path(tree=False):
                 write.writerow(cord)
             print("Path found for :", p)
             paths.append(pa)
+        else:
+            print("no path found for :", p)
         plt.close()
         i += 1
     show_motion(paths)
