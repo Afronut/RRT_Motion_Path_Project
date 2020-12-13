@@ -7,6 +7,7 @@ from math import pi
 import sys
 import os
 import csv
+import time
 
 i = scipy.pi
 dot = scipy.dot
@@ -168,6 +169,7 @@ def path(tree=False):
     paths = []
     ut = utils.utils(tree, speed=False)
     i = 0
+    start = time.perf_counter()
     for p in pack:
         saved_path = open(os.path.join(
             sys.path[0], "paths/path{0}{1}".format(i, ".csv")), 'w+', newline='')
@@ -189,5 +191,7 @@ def path(tree=False):
             print("no path found for :", p)
         plt.close()
         i += 1
+    t_time = (time.perf_counter()-start)
+
     show_motion(paths)
     plt.show()

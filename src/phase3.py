@@ -7,6 +7,7 @@ from math import pi
 import csv
 import os
 import sys
+import time
 
 i = scipy.pi
 dot = scipy.dot
@@ -124,6 +125,8 @@ def path(tree=False):
     paths = []
     ut = utils.utils(tree, speed=True)
     i = 0
+    start = time.perf_counter()
+
     for p in pack:
         saved_path = open(os.path.join(
             sys.path[0], "paths/path{0}{1}".format(i, ".csv")), 'w+', newline='')
@@ -146,5 +149,9 @@ def path(tree=False):
         plt.close()
         i += 1
     # plot_obs()
+    t_time = (time.perf_counter()-start)
+
+    print("It took", t_time)
+
     show_Rmotion(paths)
     plt.show()
