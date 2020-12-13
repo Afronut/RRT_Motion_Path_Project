@@ -89,4 +89,6 @@ _deps
 .nfs*
 
 .vs
+
+path*.csv
 # End
