@@ -217,7 +217,7 @@ class utils:
                     # print(inter_point)
                     x = []
                     y = []
-                    if isinstance(inter_point, (Point, LineString):
+                    if isinstance(inter_point, (Point, LineString)):
                         x, y = inter_point.coords.xy
                     elif isinstance(inter_point, (MultiPoint)):
                         x, y = [(p.x, p.y) for p in inter_point]

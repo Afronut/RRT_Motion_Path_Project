@@ -146,8 +146,9 @@ def path(tree=False):
             paths.append(pa)
         else:
             print("no path found for :", p)
-        plt.close()
         i += 1
+    plt.close()
+
     # plot_obs()
     t_time = (time.perf_counter()-start)
 
