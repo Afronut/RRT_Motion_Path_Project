@@ -1,3 +1,7 @@
+# Demo
+
+![](motion.gif)
+
 # What do you need?
 
 The code is written in python 3.8
@@ -19,7 +23,3 @@ you will be asked to choose the phase to run 1,2 or 3
 you will be asked if you would like to plot the tree interactively.
 
 The output of the path of each robot is saved into the folder paths as csv files
-
-# Demo
-
-![](motion.gif)
