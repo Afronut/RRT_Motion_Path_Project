@@ -1,11 +1,11 @@
 # Demo
 
 ![](motion.gif)
-
+This a simple project for path planning using  RRT (rapidly exploring random tree) with goal bias. 
 # What do you need?
 
 The code is written in python 3.8
-You must install the following packages
+You must install the following packages ( I am too lazy to put it in requirements.txt)
 
 - numpy `pip install numpy`
 - sharpely `pip install sharpely`
