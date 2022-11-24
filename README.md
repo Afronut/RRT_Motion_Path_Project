@@ -1,6 +1,7 @@
 # Demo
 
 ![](motion.gif)
+
 This a simple project for path planning using  RRT (rapidly exploring random tree) with goal bias. 
 # What do you need?
 
