@@ -16,9 +16,11 @@ You must install the following packages
 
 # How to run this code
 
-There are the obstacles set in the src/obstacles.csv.
-The goal and start point are set in the src/constraints.csv. There are 10 total robot preset in the file. you can delete or add new one. the 3rd variable is the velocity of the robot. They can be any value, however, the plotting will not show the difference of velocity.
-To run this code just tun the python script `project.py`
+The obstacles are set in the src/obstacles.csv.
+
+The goal and start point are set in the src/constraints.csv. There are 10 total robots preset in the file. you can delete or add new one. the 3rd variable is the velocity of the robot. They can be any value, however, the plotting will not show the difference of velocity.
+
+To run this code just run the python script `project.py`
 you will be asked to choose the phase to run 1,2 or 3
 you will be asked if you would like to plot the tree interactively.
 
